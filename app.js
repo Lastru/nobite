@@ -21,7 +21,6 @@ const FINGER_LABELS = {
   right_thumb: "pollice destro", right_index: "indice destro", right_middle: "medio destro",
   right_ring: "anulare destro", right_pinky: "mignolo destro"
 };
-
 const els = {
   homeScreen: document.getElementById("homeScreen"),
   handsScreen: document.getElementById("handsScreen"),
