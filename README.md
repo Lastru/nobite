@@ -1,32 +1,17 @@
-# NoBite PWA
+# NoBite
 
-Mini web app personale installabile su iPhone tramite GitHub Pages.
+PWA locale per monitorare onicofagia.
 
-## File da caricare nella root della repo
+## Logica
+- Grigio: giorno non compilato.
+- Verde: 0 dita selezionate.
+- Giallo: 1 dito selezionato.
+- Rosso: 2+ dita selezionate.
+- Reset su un giorno: cancella il log e torna grigio.
+- Streak dito: giorni consecutivi compilati in cui quel dito non è stato mangiato.
+- Record dito: migliore streak storica del singolo dito.
+- Streak generale: minimo tra le streak correnti delle dita.
+- Record generale: migliore serie storica di giorni verdi consecutivi.
 
-- index.html
-- style.css
-- app.js
-- manifest.json
-- service-worker.js
-- icons/
-
-## Dopo il caricamento
-
-Vai su:
-
-Settings > Pages
-
-e imposta:
-
-- Source: Deploy from a branch
-- Branch: main
-- Folder: /root
-
-Il link finale sarà:
-
-https://lastru.github.io/nobite/
-
-Aprilo da Safari su iPhone e fai:
-
-Condividi > Aggiungi alla schermata Home
+## Dati
+I dati sono salvati solo in locale con IndexedDB.

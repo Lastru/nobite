@@ -1,7 +1,7 @@
 {
   "name": "NoBite",
   "short_name": "NoBite",
-  "description": "Mini app personale installabile su iPhone con database locale IndexedDB.",
+  "description": "Log personale per monitorare onicofagia e streak dito per dito.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

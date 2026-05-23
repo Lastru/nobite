@@ -4,43 +4,80 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#111827" />
-
-  <!-- Supporto iPhone / schermata Home -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="NoBite" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
-
-  <!-- Manifest PWA -->
   <link rel="manifest" href="manifest.json" />
-
-  <title>NoBite</title>
   <link rel="stylesheet" href="style.css" />
+  <title>NoBite</title>
 </head>
-
 <body>
-  <main class="screen">
-    <section class="card">
-      <div class="pill">NoBite PWA</div>
-
-      <h1>Hello World 👋</h1>
-      <p class="subtitle">
-        Mini app personale installabile su iPhone, con dati salvati localmente.
-      </p>
-
-      <div class="counter-box">
-        <p class="label">Contatore salvato in IndexedDB</p>
-        <output id="counter" class="counter">0</output>
-
-        <div class="buttons">
-          <button id="plus" type="button">+1</button>
-          <button id="reset" type="button" class="secondary">Reset</button>
+  <main class="app-shell">
+    <section id="homeScreen" class="screen active-screen">
+      <header class="home-header">
+        <div>
+          <p class="eyebrow">NoBite</p>
+          <h1>Calendario</h1>
         </div>
-      </div>
+        <button id="openHandsBtn" class="top-button" type="button">Mani</button>
+      </header>
 
-      <p id="status" class="status">Caricamento...</p>
+      <section class="summary-card">
+        <div>
+          <span class="summary-label">Streak</span>
+          <strong id="generalStreak">0</strong>
+          <span class="summary-unit">giorni</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div>
+          <span class="summary-label">Record</span>
+          <strong id="generalRecord">0</strong>
+          <span class="summary-unit">giorni</span>
+        </div>
+      </section>
+
+      <section class="calendar-card">
+        <div class="month-nav">
+          <button id="prevMonthBtn" class="month-arrow" type="button" aria-label="Mese precedente">‹</button>
+          <h2 id="monthTitle">—</h2>
+          <button id="nextMonthBtn" class="month-arrow" type="button" aria-label="Mese successivo">›</button>
+        </div>
+
+        <div class="weekday-row" aria-hidden="true">
+          <span>L</span><span>M</span><span>M</span><span>G</span><span>V</span><span>S</span><span>D</span>
+        </div>
+        <div id="calendarGrid" class="calendar-grid"></div>
+      </section>
+    </section>
+
+    <section id="handsScreen" class="screen">
+      <header class="hands-header">
+        <button id="backHomeBtn" class="back-button" type="button">← Indietro</button>
+        <div>
+          <p class="eyebrow">NoBite</p>
+          <h1>Mani</h1>
+        </div>
+      </header>
+
+      <section class="hands-stats-card">
+        <p class="section-hint">Streak attuale e record per ogni dito.</p>
+        <div id="handsStatsContainer" class="hands-stats-container"></div>
+      </section>
     </section>
   </main>
+
+  <section id="dayModal" class="modal hidden" aria-modal="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <article class="modal-card">
+      <h2 id="modalDateTitle">—</h2>
+      <div id="modalHandsContainer" class="modal-hands-container"></div>
+      <div class="modal-actions">
+        <button id="submitDayBtn" class="submit-button" type="button">Invio</button>
+        <button id="resetDayBtn" class="reset-button" type="button">Reset</button>
+      </div>
+    </article>
+  </section>
 
   <script src="app.js"></script>
 </body>
