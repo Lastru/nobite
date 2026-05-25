@@ -109,8 +109,13 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .section-hint { margin-bottom: 16px; color: var(--muted); font-size: 14px; }
 .hands-stats-container { display: grid; gap: 18px; }
 .hand-panel {
-  position: relative; min-height: 300px; border: 1px solid var(--line);
-  border-radius: 26px; background: rgba(255,255,255,.07); overflow: hidden; padding: 16px;
+  position: relative;
+  min-height: 265px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255,255,255,.07);
+  overflow: hidden;
+  padding: 8px;
 }
 .hand-title {
   margin: 0; color: var(--muted); font-size: 14px; font-weight: 850;
@@ -118,11 +123,11 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 }
 .hand-shape {
   position: relative;
-  height: 310px;
+  height: 270px;
   width: 390px;
   left: 50%;
-  margin: 8px 0 0;
-  transform: translateX(-50%) scale(.88);
+  margin: 0;
+  transform: translateX(-50%) scale(.80);
   transform-origin: top center;
 }
 
@@ -297,7 +302,6 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
   padding-top: 8px;
   background: linear-gradient(to top, rgba(15,23,42,.98) 78%, transparent);
 }
-
 .submit-button,
 .reset-button {
   min-height: 46px;
@@ -323,10 +327,10 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
     min-height: 285px;
   }
   .modal .hand-shape {
-    transform: translateX(-50%) scale(.72);
+    transform: translateX(-50%) scale(.64);
   }
   .modal .hand-panel {
-    min-height: 250px;
+    min-height: 205px;
   }
 }
 
