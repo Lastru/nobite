@@ -305,21 +305,21 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 /* Spostamento palmo nella schermata Mani */
 .hand.left .palm {
   left: calc(50% - 12px);
-  bottom: -30px;
+  bottom: -20px;
 }
 
 .hand.right .palm {
   left: calc(50% + 12px);
-  bottom: -30px;
+  bottom: -20px;
 }
 
 /* Spostamento palmo nel popup dei giorni */
 .modal .hand.left .palm {
   left: calc(50% - 12px);
-  bottom: -20px;
+  bottom: -30px;
 }
 
 .modal .hand.right .palm {
   left: calc(50% + 12px);
-  bottom: -20px;
+  bottom: -30px;
 }
