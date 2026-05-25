@@ -51,6 +51,8 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
   min-height: 46px; padding: 12px 16px; background: rgba(255,255,255,.12); border: 1px solid var(--line);
 }
 .summary-card, .calendar-card, .hands-stats-card {
+  padding: 18px 20px 20px;
+  overflow: hidden;
   border: 1px solid var(--line); border-radius: 28px; background: var(--panel);
   box-shadow: 0 18px 70px rgba(0,0,0,.24); backdrop-filter: blur(18px);
 }
