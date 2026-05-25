@@ -323,3 +323,11 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
   left: calc(50% + 12px);
   bottom: -30px;
 }
+
+.hand.left .palm {
+  transform: translateX(-50%) rotate(20deg);
+}
+
+.hand.right .palm {
+  transform: translateX(-50%) rotate(-20deg);
+}
