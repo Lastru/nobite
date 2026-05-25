@@ -130,8 +130,8 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
   position: absolute;
   left: 50%;
   bottom: 28px;
-  width: 134px;
-  height: 132px;
+  width: 140px;
+  height: 150px;
   transform: translateX(-50%);
   border-radius: 44px 44px 38px 38px;
   background: rgba(255,255,255,.13);
@@ -296,21 +296,21 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 /* Spostamento palmo nella schermata Mani */
 .hand.left .palm {
   left: calc(50% - 12px);
-  bottom: 18px;
+  bottom: 30px;
 }
 
 .hand.right .palm {
   left: calc(50% + 12px);
-  bottom: 18px;
+  bottom: 30px;
 }
 
 /* Spostamento palmo nel popup dei giorni */
 .modal .hand.left .palm {
   left: calc(50% - 12px);
-  bottom: -6px;
+  bottom: 20px;
 }
 
 .modal .hand.right .palm {
   left: calc(50% + 12px);
-  bottom: -6px;
+  bottom: 20px;
 }
