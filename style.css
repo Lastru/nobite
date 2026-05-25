@@ -75,7 +75,12 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
   height: 48px; background: rgba(255,255,255,.12); border: 1px solid var(--line);
   font-size: 32px; line-height: 1;
 }
-.weekday-row, .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 7px; }
+.weekday-row,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+}
 .weekday-row { margin-bottom: 8px; }
 .weekday-row span { color: var(--muted); text-align: center; font-size: 13px; font-weight: 850; }
 .day-cell {
