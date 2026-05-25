@@ -118,76 +118,123 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 }
 .hand-shape {
   position: relative;
-  height: 260px;
-  width: min(340px, 100%);
-  margin: 8px auto 0;
+  height: 310px;
+  width: 390px;
+  left: 50%;
+  margin: 8px 0 0;
+  transform: translateX(-50%) scale(.88);
+  transform-origin: top center;
 }
+
 .palm {
-  position: absolute; left: 50%; bottom: 16px; width: 124px; height: 126px;
-  transform: translateX(-50%); border-radius: 44px 44px 38px 38px;
-  background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.12);
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  width: 134px;
+  height: 132px;
+  transform: translateX(-50%);
+  border-radius: 44px 44px 38px 38px;
+  background: rgba(255,255,255,.13);
+  border: 1px solid rgba(255,255,255,.12);
 }
+
 .finger {
-  position: absolute; display: grid; place-items: center; border-radius: 999px;
-  background: var(--finger-idle); border: 1px solid rgba(255,255,255,.18);
-  color: white; font-weight: 900;
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--finger-idle);
+  border: 1px solid rgba(255,255,255,.18);
+  color: white;
+  font-weight: 900;
+  transform: translateX(-50%);
 }
-.finger.selectable { width: 48px; height: 78px; }
+
+.finger.selectable {
+  width: 48px;
+  height: 78px;
+}
+
 .finger.selectable.active {
-  background: var(--finger-active); border-color: rgba(255,255,255,.50);
+  background: var(--finger-active);
+  border-color: rgba(255,255,255,.50);
   box-shadow: 0 0 0 5px rgba(239,68,68,.15);
 }
+
 .finger.stat-finger {
-  width: 58px; min-height: 86px; padding: 7px 4px; align-content: center; gap: 3px; font-size: 12px;
+  width: 58px;
+  min-height: 86px;
+  padding: 7px 4px;
+  align-content: center;
+  gap: 3px;
+  font-size: 12px;
 }
-.stat-finger span { display: block; line-height: 1.05; }
-.stat-finger .metric { font-size: 16px; letter-spacing: -.03em; }
+
+.stat-finger span {
+  display: block;
+  line-height: 1.05;
+}
+
+.stat-finger .metric {
+  font-size: 16px;
+  letter-spacing: -.03em;
+}
 
 /* Mano destra vista dal dorso:
    pollice - indice - medio - anulare - mignolo */
 .finger.thumb {
-  left: 34px;
-  top: 142px;
+  --x: 72px;
+  --y: 160px;
   width: 66px;
   height: 48px;
-  transform: rotate(-28deg);
+  transform: translateX(-50%) rotate(-28deg);
 }
+
 .finger.index {
-  left: 82px;
-  top: 54px;
+  --x: 132px;
+  --y: 66px;
 }
+
 .finger.middle {
-  left: 132px;
-  top: 22px;
+  --x: 195px;
+  --y: 24px;
   height: 92px;
 }
+
 .finger.ring {
-  left: 182px;
-  top: 54px;
+  --x: 258px;
+  --y: 66px;
 }
+
 .finger.pinky {
-  left: 232px;
-  top: 88px;
+  --x: 318px;
+  --y: 106px;
   height: 68px;
 }
 
 /* Mano sinistra vista dal dorso:
    mignolo - anulare - medio - indice - pollice */
 .hand.left .finger.thumb {
-  left: 224px;
-  transform: rotate(28deg);
+  --x: 318px;
+  transform: translateX(-50%) rotate(28deg);
 }
+
 .hand.left .finger.index {
-  left: 182px;
+  --x: 258px;
 }
+
 .hand.left .finger.middle {
-  left: 132px;
+  --x: 195px;
 }
+
 .hand.left .finger.ring {
-  left: 82px;
+  --x: 132px;
 }
+
 .hand.left .finger.pinky {
-  left: 34px;
+  --x: 72px;
 }
 
 .modal { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; }
@@ -202,8 +249,8 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .modal-hands-container { display: grid; gap: 14px; }
 .modal .hand-panel { min-height: 250px; }
 .modal .hand-shape {
-  height: 215px;
-  transform: scale(.94);
+  height: 275px;
+  transform: translateX(-50%) scale(.76);
   transform-origin: top center;
 }
 .modal .palm { bottom: 4px; }
@@ -220,25 +267,20 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
     padding-left: 12px;
     padding-right: 12px;
   }
-
   .day-cell {
     border-radius: 12px;
     font-size: 16px;
   }
-
   .hand-shape {
-    transform: scale(.86);
+    transform: translateX(-50%) scale(.78);
     transform-origin: top center;
   }
-
   .hand-panel {
     min-height: 285px;
   }
-
   .modal .hand-shape {
-    transform: scale(.88);
+    transform: translateX(-50%) scale(.72);
   }
-
   .modal .hand-panel {
     min-height: 250px;
   }
