@@ -257,9 +257,15 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .modal.hidden { display: none; }
 .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.64); backdrop-filter: blur(10px); }
 .modal-card {
-  position: relative; width: min(440px, 100%); max-height: min(86vh, 760px); overflow-y: auto;
-  border: 1px solid var(--line); border-radius: 30px; background: rgba(15,23,42,.96);
-  padding: 18px; box-shadow: 0 28px 100px rgba(0,0,0,.55);
+  position: relative;
+  width: min(440px, 100%);
+  max-height: min(94dvh, 760px);
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: rgba(15,23,42,.96);
+  padding: 12px;
+  box-shadow: 0 28px 100px rgba(0,0,0,.55);
 }
 .modal-card h2 { text-align: center; margin-bottom: 12px; text-transform: capitalize; }
 .modal-hands-container { display: grid; gap: 14px; }
