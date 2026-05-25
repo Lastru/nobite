@@ -21,6 +21,7 @@ const FINGER_LABELS = {
   right_thumb: "pollice destro", right_index: "indice destro", right_middle: "medio destro",
   right_ring: "anulare destro", right_pinky: "mignolo destro"
 };
+
 const els = {
   homeScreen: document.getElementById("homeScreen"),
   handsScreen: document.getElementById("handsScreen"),
@@ -239,7 +240,7 @@ function createHandPanel({ hand, mode, stats = {} }) {
       button.classList.add("stat-finger");
       button.disabled = true;
       button.setAttribute("aria-label", `${FINGER_LABELS[finger.id]} streak ${fingerStat.current}, record ${fingerStat.record}`);
-      button.innerHTML = `<span>S</span><span class="metric">${fingerStat.current}</span><span>R ${fingerStat.record}</span>`;
+      button.innerHTML = `<span class="metric">${fingerStat.current}</span><span>R ${fingerStat.record}</span>`;
     }
 
     shape.appendChild(button);

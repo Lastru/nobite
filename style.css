@@ -178,8 +178,15 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 }
 
 .stat-finger .metric {
-  font-size: 16px;
-  letter-spacing: -.03em;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.stat-finger .record {
+  font-size: 11px;
+  opacity: .75;
+  margin-top: 3px;
 }
 
 /* Mano destra vista dal dorso:
