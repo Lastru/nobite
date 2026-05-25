@@ -109,13 +109,8 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .section-hint { margin-bottom: 16px; color: var(--muted); font-size: 14px; }
 .hands-stats-container { display: grid; gap: 18px; }
 .hand-panel {
-  position: relative;
-  min-height: 265px;
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: rgba(255,255,255,.07);
-  overflow: hidden;
-  padding: 8px;
+  position: relative; min-height: 300px; border: 1px solid var(--line);
+  border-radius: 26px; background: rgba(255,255,255,.07); overflow: hidden; padding: 16px;
 }
 .hand-title {
   margin: 0; color: var(--muted); font-size: 14px; font-weight: 850;
@@ -123,11 +118,11 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 }
 .hand-shape {
   position: relative;
-  height: 270px;
+  height: 310px;
   width: 390px;
   left: 50%;
-  margin: 0;
-  transform: translateX(-50%) scale(.80);
+  margin: 8px 0 0;
+  transform: translateX(-50%) scale(.88);
   transform-origin: top center;
 }
 
@@ -262,51 +257,24 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .modal.hidden { display: none; }
 .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.64); backdrop-filter: blur(10px); }
 .modal-card {
-  position: relative;
-  width: min(440px, 100%);
-  max-height: min(94dvh, 760px);
-  overflow-y: auto;
-  border: 1px solid var(--line);
-  border-radius: 26px;
-  background: rgba(15,23,42,.96);
-  padding: 12px;
-  box-shadow: 0 28px 100px rgba(0,0,0,.55);
+  position: relative; width: min(440px, 100%); max-height: min(86vh, 760px); overflow-y: auto;
+  border: 1px solid var(--line); border-radius: 30px; background: rgba(15,23,42,.96);
+  padding: 18px; box-shadow: 0 28px 100px rgba(0,0,0,.55);
 }
-.modal-card h2 {
-  text-align: center;
-  margin-bottom: 6px;
-  text-transform: capitalize;
-}
-.modal-hands-container {
-  display: grid;
-  gap: 6px;
-}
-.modal .hand-panel {
-  min-height: 215px;
-  padding: 6px;
-  border-radius: 20px;
-}
+.modal-card h2 { text-align: center; margin-bottom: 12px; text-transform: capitalize; }
+.modal-hands-container { display: grid; gap: 14px; }
+.modal .hand-panel { min-height: 250px; }
 .modal .hand-shape {
-  height: 220px;
-  transform: translateX(-50%) scale(.68);
+  height: 275px;
+  transform: translateX(-50%) scale(.76);
   transform-origin: top center;
-  margin-top: 0;
 }
 .modal .palm { bottom: 4px; }
 .modal-actions {
-  position: sticky;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  padding-top: 8px;
-  background: linear-gradient(to top, rgba(15,23,42,.98) 78%, transparent);
+  position: sticky; bottom: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  padding-top: 12px; background: linear-gradient(to top, rgba(15,23,42,.98) 78%, transparent);
 }
-.submit-button,
-.reset-button {
-  min-height: 46px;
-  font-size: 16px;
-}
+.submit-button, .reset-button { min-height: 52px; font-size: 17px; }
 .submit-button { background: var(--clean); color: #052e16; }
 .reset-button { background: rgba(255,255,255,.12); border: 1px solid var(--line); }
 
@@ -327,10 +295,10 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
     min-height: 285px;
   }
   .modal .hand-shape {
-    transform: translateX(-50%) scale(.64);
+    transform: translateX(-50%) scale(.72);
   }
   .modal .hand-panel {
-    min-height: 205px;
+    min-height: 250px;
   }
 }
 
