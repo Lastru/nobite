@@ -292,3 +292,25 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
     min-height: 250px;
   }
 }
+
+/* Spostamento palmo nella schermata Mani */
+.hand.left .palm {
+  left: calc(50% - 12px);
+  bottom: 18px;
+}
+
+.hand.right .palm {
+  left: calc(50% + 12px);
+  bottom: 18px;
+}
+
+/* Spostamento palmo nel popup dei giorni */
+.modal .hand.left .palm {
+  left: calc(50% - 12px);
+  bottom: -6px;
+}
+
+.modal .hand.right .palm {
+  left: calc(50% + 12px);
+  bottom: -6px;
+}
