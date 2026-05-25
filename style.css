@@ -325,9 +325,9 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 }
 
 .hand.left .palm {
-  transform: translateX(-50%) rotate(-20deg);
+  transform: translateX(-50%) rotate(-10deg);
 }
 
 .hand.right .palm {
-  transform: translateX(-50%) rotate(20deg);
+  transform: translateX(-50%) rotate(10deg);
 }
