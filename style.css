@@ -65,7 +65,7 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .summary-card strong { display: block; font-size: 44px; line-height: 1; letter-spacing: -.06em; }
 .summary-unit { display: block; margin-top: 5px; color: var(--muted); font-size: 13px; }
 .summary-divider { width: 1px; height: 58px; background: var(--line); }
-.calendar-card { padding: 16px; }
+.calendar-card { padding: 20px; }
 .month-nav {
   display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
   gap: 10px; margin-bottom: 14px;
