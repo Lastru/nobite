@@ -143,19 +143,52 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .stat-finger span { display: block; line-height: 1.05; }
 .stat-finger .metric { font-size: 16px; letter-spacing: -.03em; }
 
-.finger.index { left: 88px; top: 52px; }
-.finger.middle { left: 126px; top: 22px; height: 90px; }
-.finger.ring { left: 164px; top: 50px; }
-.finger.pinky { left: 202px; top: 86px; height: 68px; }
-.finger.thumb { left: 48px; top: 138px; width: 66px; height: 48px; transform: rotate(-28deg); }
+/* Mano destra vista dal dorso:
+   pollice - indice - medio - anulare - mignolo */
+.finger.thumb {
+  left: 34px;
+  top: 142px;
+  width: 66px;
+  height: 48px;
+  transform: rotate(-28deg);
+}
+.finger.index {
+  left: 82px;
+  top: 54px;
+}
+.finger.middle {
+  left: 132px;
+  top: 22px;
+  height: 92px;
+}
+.finger.ring {
+  left: 182px;
+  top: 54px;
+}
+.finger.pinky {
+  left: 232px;
+  top: 88px;
+  height: 68px;
+}
+
+/* Mano sinistra vista dal dorso:
+   mignolo - anulare - medio - indice - pollice */
 .hand.left .finger.thumb {
-  left: 186px;
+  left: 224px;
   transform: rotate(28deg);
 }
-.hand.left .finger.index { left: 164px; }
-.hand.left .finger.middle { left: 126px; }
-.hand.left .finger.ring { left: 88px; }
-.hand.left .finger.pinky { left: 50px; }
+.hand.left .finger.index {
+  left: 182px;
+}
+.hand.left .finger.middle {
+  left: 132px;
+}
+.hand.left .finger.ring {
+  left: 82px;
+}
+.hand.left .finger.pinky {
+  left: 34px;
+}
 
 .modal { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; }
 .modal.hidden { display: none; }
