@@ -201,7 +201,11 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .modal-card h2 { text-align: center; margin-bottom: 12px; text-transform: capitalize; }
 .modal-hands-container { display: grid; gap: 14px; }
 .modal .hand-panel { min-height: 250px; }
-.modal .hand-shape { height: 202px; transform: scale(.90); transform-origin: top center; }
+.modal .hand-shape {
+  height: 215px;
+  transform: scale(.94);
+  transform-origin: top center;
+}
 .modal .palm { bottom: 4px; }
 .modal-actions {
   position: sticky; bottom: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
@@ -210,9 +214,32 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 .submit-button, .reset-button { min-height: 52px; font-size: 17px; }
 .submit-button { background: var(--clean); color: #052e16; }
 .reset-button { background: rgba(255,255,255,.12); border: 1px solid var(--line); }
+
 @media (max-width: 390px) {
-  .app-shell { padding-left: 12px; padding-right: 12px; }
-  .day-cell { border-radius: 12px; font-size: 16px; }
-  .hand-shape { transform: scale(.88); transform-origin: top center; }
-  .hand-panel { min-height: 270px; }
+  .app-shell {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .day-cell {
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .hand-shape {
+    transform: scale(.86);
+    transform-origin: top center;
+  }
+
+  .hand-panel {
+    min-height: 285px;
+  }
+
+  .modal .hand-shape {
+    transform: scale(.88);
+  }
+
+  .modal .hand-panel {
+    min-height: 250px;
+  }
 }
