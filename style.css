@@ -228,6 +228,15 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
   transform: translateX(-50%) rotate(28deg);
 }
 
+/* Correzione inclinazione pollici SOLO nel popup dei giorni */
+.modal .hand.right .finger.thumb {
+  transform: translateX(-50%) rotate(28deg);
+}
+
+.modal .hand.left .finger.thumb {
+  transform: translateX(-50%) rotate(-28deg);
+}
+
 .hand.left .finger.index {
   --x: 258px;
 }
@@ -296,21 +305,21 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
 /* Spostamento palmo nella schermata Mani */
 .hand.left .palm {
   left: calc(50% - 12px);
-  bottom: 30px;
+  bottom: -30px;
 }
 
 .hand.right .palm {
   left: calc(50% + 12px);
-  bottom: 30px;
+  bottom: -30px;
 }
 
 /* Spostamento palmo nel popup dei giorni */
 .modal .hand.left .palm {
   left: calc(50% - 12px);
-  bottom: 20px;
+  bottom: -20px;
 }
 
 .modal .hand.right .palm {
   left: calc(50% + 12px);
-  bottom: 20px;
+  bottom: -20px;
 }
