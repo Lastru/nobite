@@ -225,12 +225,12 @@ h2 { margin-bottom: 0; font-size: 22px; letter-spacing: -.035em; }
    mignolo - anulare - medio - indice - pollice */
 .hand.left .finger.thumb {
   --x: 318px;
-  transform: translateX(-50%) rotate(28deg);
+  transform: translateX(-50%) rotate(20deg);
 }
 
 /* Correzione inclinazione pollici SOLO nel popup dei giorni */
 .modal .hand.right .finger.thumb {
-  transform: translateX(-50%) rotate(28deg);
+  transform: translateX(-50%) rotate(20deg);
 }
 
 .modal .hand.left .finger.thumb {
